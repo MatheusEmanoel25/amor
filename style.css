@@ -1,0 +1,71 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Container para centralizar o conteúdo */
+  .container {
+    text-align: center;
+  }
+  
+  /* Estilo para o coração */
+  .heart {
+    font-size: 120px;  /* Coração bem grande */
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  /* Efeito de hover no coração */
+  .heart:hover {
+    transform: scale(1.3);  /* Aumenta o tamanho ao passar o mouse */
+  }
+  
+  /* Estilo para a mensagem e imagem */
+  .message-container {
+    display: none;  /* Inicialmente oculto */
+    margin-top: 20px;
+  }
+  
+  .message-container img {
+    width: 100%;
+    max-width: 350px;  /* Máximo de 350px */
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .message-container p {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Responsividade para dispositivos menores */
+  @media (max-width: 600px) {
+    .heart {
+      font-size: 100px;  /* Tamanho do coração reduzido para telas menores */
+    }
+  
+    .message-container img {
+      max-width: 250px;  /* Imagem um pouco menor */
+    }
+  
+    .message-container p {
+      font-size: 20px;  /* Texto menor em dispositivos pequenos */
+    }
+  }
+  
